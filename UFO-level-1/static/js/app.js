@@ -1,4 +1,20 @@
 // from data.js
 var tableData = data;
 
-// YOUR CODE HERE!
+console.log(tableData);
+
+var tbody = d3.select("tbody");
+
+tableData.forEach(function(ufoSighting){
+    console.log(ufoSighting);
+
+    var row = tbody.append("tr");
+    Object.entries(ufoSighting).forEach(function([key,value]){
+        console.log(key,value);
+
+        var cell = row.append("td");
+        cell.text(value);
+    });
+
+
+});
