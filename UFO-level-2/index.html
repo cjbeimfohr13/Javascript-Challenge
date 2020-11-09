@@ -33,55 +33,41 @@
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
                 <form>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">Date and Column Name</span>
-                    </div>
-                    <input id="datetime" type="text" aria-label="date" class="form-control" placeholder="1/11/2011">
-                    <input type="text" aria-label="column" class="form-control" placeholder="enter column">
-
-                  </div>
+                  <label>Date</label>
+                  <input id="datetime" type="text" aria-label="date" class="form-control" placeholder="1/11/2011">
+                  <label>City</label>
+                  <input id="city" type="text" aria-label="city" class="form-control" placeholder="enter city name">
+                  <label>State</label>
+                  <input id="state" type="text" aria-label="state" class="form-control" placeholder="enter state name">
+                  <label>Country</label>
+                  <input id="country" type="text" aria-label="country" class="form-control"
+                    placeholder="enter country name">
+                  <label>Shape</label>
+                  <input id="shape" type="text" aria-label="shape" class="form-control" placeholder="enter shape name">
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-
-
-                  <!-- <div class="input-group"> -->
-                    <!-- <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"> -->
-                    <!-- <div class="input-group-append"> -->
-                      <!-- <button type="button" class="btn btn-outline-secondary">Action</button> -->
-                      <!-- <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                        <!-- <span class="sr-only">Toggle Dropdown</span> -->
-                      <!-- </button> -->
-                      <!-- <div class="dropdown-menu"> -->
-                        <!-- <a class="dropdown-item" href="#">Action</a> -->
-                        <!-- <a class="dropdown-item" href="#">Another action</a> -->
-                        <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                        <!-- <a class="dropdown-item" href="#">Separated link</a> -->
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  <!-- </div> -->
-
                 </form>
               </div>
             </div>
+          </aside>
         </div>
-        </aside>
-      </div>
-      <div class="col-md-10">
-        <div id="table-area" class="">
-          <table id="ufo-table" class="table table-striped">
-            <thead>
-              <tr>
-                <th class="table-head">Date</th>
-                <th class="table-head">City</th>
-                <th class="table-head">State</th>
-                <th class="table-head">Country</th>
-                <th class="table-head">Shape</th>
-                <th class="table-head">Duration</th>
-                <th class="table-head">Comments</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
